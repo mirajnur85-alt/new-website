@@ -14,15 +14,20 @@ function createPrice(duration: string, usdt: number, note?: string) {
 export const products: Product[] = [
   {
     id: "drip-clint-mobile",
-    name: "DRIP CLINT – MOBILE",
+    name: "DRIP CLINT MOD MENU APK",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/Drip clint.jpg",
-    description: "Advanced mobile gaming solution with premium features and undetected gameplay.",
+    description: "📌 NOTE: It Will Run Directly On Your Phone And Will Be In Easy Use",
     features: [
-      "Undetected gameplay",
-      "Auto aim & ESP",
-      "Wallhack features",
-      "Mobile optimized"
+      "🎚️ Aim Kill",
+      "🎚️ Silent Aim",
+      "🎚️ Silent Kill",
+      "🎚️ Fly Hack",
+      "🎚️ God Mode (Ghost)",
+      "🎚️ Speed Timer",
+      "🎚️ Teleport 8m",
+      "🎚️ Up Player",
+      "🎚️ Auto Swap Weapon"
     ],
     prices: [
       createPrice("1 Day", 2),
@@ -33,15 +38,20 @@ export const products: Product[] = [
   },
   {
     id: "drip-clint-pc",
-    name: "DRIP CLINT – PC",
+    name: "DRIP CLINT MOD MENU PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/Drip clint.jpg",
-    description: "Professional PC gaming solution with advanced features for competitive play.",
+    description: "📌 NOTE: Professional gaming solution with advanced features and easy setup.",
     features: [
-      "High performance",
-      "Advanced ESP",
-      "Aimbot system",
-      "PC optimized"
+      "🎚️ Aim Kill",
+      "🎚️ Silent Aim",
+      "🎚️ Silent Kill",
+      "🎚️ Fly Hack",
+      "🎚️ God Mode (Ghost)",
+      "🎚️ Speed Timer",
+      "🎚️ Teleport 8m",
+      "🎚️ Up Player",
+      "🎚️ Auto Swap Weapon"
     ],
     prices: [
       createPrice("1 Day", 2),
@@ -52,15 +62,20 @@ export const products: Product[] = [
   },
   {
     id: "drip-clint-root",
-    name: "DRIP CLINT – ROOT",
+    name: "DRIP CLINT MOD MENU ROOT",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/Drip clint.jpg",
-    description: "Root access solution for maximum control and advanced features.",
+    description: "📌 NOTE: Root access version for maximum control and advanced features.",
     features: [
-      "Root access",
-      "Full control",
-      "Advanced features",
-      "Regular updates"
+      "🎚️ Aim Kill",
+      "🎚️ Silent Aim",
+      "🎚️ Silent Kill",
+      "🎚️ Fly Hack",
+      "🎚️ God Mode (Ghost)",
+      "🎚️ Speed Timer",
+      "🎚️ Teleport 8m",
+      "🎚️ Up Player",
+      "🎚️ Auto Swap Weapon"
     ],
     prices: [
       createPrice("1 Day", 2),
@@ -70,15 +85,19 @@ export const products: Product[] = [
   },
   {
     id: "br-mods-root",
-    name: "BR MODS – ROOT",
+    name: "BR MODE INJECTOR",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
-    description: "Battle Royale mods with root access for enhanced gameplay experience.",
+    description: "✅ 𝐍𝐎𝐓𝐄 : (VphoneOS Non Root) | ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ | ᴇᴍᴜʟᴀᴛᴏʀ | ✓ 100% ʀᴀɴᴋ ᴡᴏʀᴋɪɴɢ",
     features: [
-      "BR optimized",
-      "Root required",
-      "Enhanced mods",
-      "Safe & secure"
+      "👍 Sɪʟᴇɴᴛ Aɪᴍʙᴏᴛ",
+      "👍 Hᴇᴀᴅsʜᴏʀᴛ Hᴀᴄᴋ",
+      "👍 Aɪᴍғᴏᴠ 360",
+      "👍 Aɪᴍ Mᴀɢɴᴇᴛ",
+      "👍 Sᴘᴇᴇᴅ Hᴀᴄᴋ",
+      "👍 Gʜᴏsᴛ Hᴀᴄᴋ",
+      "👍 ESP Lᴏᴄᴀᴛɪᴏɴ",
+      "👍 🄲🅂 / 🄱🅁 Rᴀɴᴋ Wᴏʀᴋɪɴɢ"
     ],
     prices: [
       createPrice("7 Days", 4),
@@ -91,12 +110,17 @@ export const products: Product[] = [
     name: "BR MODS – BYPASS PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
-    description: "Advanced bypass system for PC with anti-detection technology.",
+    description: "✅ 𝐍𝐎𝐓𝐄 : Emulator Bypass - Play in Mobile Lobby from PC | Advanced Anti-Detection | 100% Secure",
     features: [
-      "Anti-detection",
-      "Bypass system",
-      "PC optimized",
-      "Stealth mode"
+      "🛡️ Eᴍᴜʟᴀᴛᴏʀ Bʏᴘᴀss (Mᴏʙɪʟᴇ Lᴏʙʙʏ)",
+      "👍 Sɪʟᴇɴᴛ Aɪᴍʙᴏᴛ",
+      "👍 Hᴇᴀᴅsʜᴏʀᴛ Hᴀᴄᴋ",
+      "👍 Aɪᴍғᴏᴠ 360",
+      "👍 Aɪᴍ Mᴀɢɴᴇᴛ",
+      "👍 Sᴘᴇᴇᴅ Hᴀᴄᴋ",
+      "👍 Gʜᴏsᴛ Hᴀᴄᴋ",
+      "👍 ESP Lᴏᴄᴀᴛɪᴏɴ",
+      "👍 🄲🅂 / 🄱🅁 Rᴀɴᴋ Wᴏʀᴋɪɴɢ"
     ],
     prices: [
       createPrice("1 Day", 3),
@@ -109,12 +133,16 @@ export const products: Product[] = [
     name: "BR MODS – SILENTAIM PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
-    description: "Silent aim system for PC with precision targeting and smooth gameplay.",
+    description: "✅ 𝐍𝐎𝐓𝐄 : High-Precision Silent Aim System | Performance Optimized for PC",
     features: [
-      "Silent aim",
-      "Precision targeting",
-      "Smooth gameplay",
-      "Undetectable"
+      "🎯 Sɪʟᴇɴᴛ Aɪᴍ Sʏsᴛᴇᴍ (Mᴀɪɴ)",
+      "👍 Hᴇᴀᴅsʜᴏʀᴛ Hᴀᴄᴋ",
+      "👍 Aɪᴍғᴏᴠ 360",
+      "👍 Aɪᴍ Mᴀɢɴᴇᴛ",
+      "👍 Sᴘᴇᴇᴅ Hᴀᴄᴋ",
+      "👍 Gʜᴏsᴛ Hᴀᴄᴋ",
+      "👍 ESP Lᴏᴄᴀᴛɪᴏɴ",
+      "👍 🄲🅂 / 🄱🅁 Rᴀɴᴋ Wᴏʀᴋɪɴɢ"
     ],
     prices: [
       createPrice("1 Day", 2),
@@ -195,15 +223,23 @@ export const products: Product[] = [
   },
   {
     id: "fluorite-ios",
-    name: "FLUORITE iOS – FREE FIRE",
+    name: "FLUORITE iOS PANEL",
     subtitle: "iPhone 6–17",
     image: "/assets/Flourite.jpg",
     description: "iOS optimized solution for iPhone users with full device support.",
     features: [
-      "iOS optimized",
-      "iPhone 6-17 support",
-      "Full device support",
-      "G-Box compatible"
+      "👍 𝐀𝐢𝗺𝐛𝗼𝘁 – Neck | Head | Body",
+      "👍 𝗕𝗼𝗻𝗲 𝗔𝗶𝗺𝗯𝗼𝘁 – Pinpoint Accuracy",
+      "👍 𝗦𝗶𝗹𝗲𝗻𝘁 𝗔𝗶𝗺 – No Movement, Just Kill",
+      "👍 𝗖𝘂𝘀𝘁𝗼𝗺 𝗔𝗶𝗺𝗙𝗢𝗩 – Smooth Control",
+      "👍 𝗦𝗽𝗲𝗲𝗱 𝗕𝗼𝗼𝘀𝘁 – 𝟏𝟎𝐱 Faster Than Normal",
+      "👍 𝗘𝗦𝗣 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 – See Enemies Before They See",
+      "👍 𝐒𝐓𝐑𝐄𝐀𝐌𝐄𝐑 𝐌𝐎𝐃𝐄 – 𝐅𝐨𝐫 𝐒𝐞𝐜𝐫𝐞𝐭 𝐏𝐥𝐚𝐲",
+      "😀 𝗠𝗔𝗜𝗡 𝗜𝗗 𝗦𝗔𝗙𝗘",
+      "😀 𝗡𝗼 𝗶𝗣𝗵𝗼𝗻𝗲 𝗥𝗲𝘀𝘁𝗮𝗿𝘁 – Plug & Play",
+      "💀 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗔𝗻𝘁𝗶𝗕𝗮𝗻 – Maximum Protection",
+      "✅ No one will be able to see ESP / Aim in screen share",
+      "✅ Only you can see everything"
     ],
     prices: [
       createPrice("1 Day", 4),
