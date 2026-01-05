@@ -13,28 +13,28 @@ export function HomePage() {
         <div className="mb-8 sm:mb-10">
           <div className="inline-block mb-4 sm:mb-6">
             <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4">
-              <div className="h-px w-8 sm:w-16 bg-gradient-to-r from-transparent to-[#00eaff]"></div>
-              <span className="text-xs sm:text-sm font-black text-[#00eaff] uppercase tracking-wider">{t("home.subtitle")}</span>
-              <div className="h-px w-8 sm:w-16 bg-gradient-to-l from-transparent to-[#00eaff]"></div>
+              <div className="h-px w-8 sm:w-16 bg-gradient-to-r from-transparent to-neon-blue"></div>
+              <span className="text-xs sm:text-sm font-black text-neon-blue uppercase tracking-wider">{t("home.subtitle")}</span>
+              <div className="h-px w-8 sm:w-16 bg-gradient-to-l from-transparent to-neon-blue"></div>
             </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 bg-gradient-to-r from-[#00eaff] via-[#8a3dff] to-[#ff4fd8] bg-clip-text text-transparent leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink bg-clip-text text-transparent leading-tight">
               MIRAJ XHEAT
               <br />
-              <span className="bg-gradient-to-r from-[#ff4fd8] via-[#8a3dff] to-[#00eaff] bg-clip-text text-transparent">OFFICIAL</span>
+              <span className="bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue bg-clip-text text-transparent">OFFICIAL</span>
             </h1>
-            <div className="h-1 w-20 sm:w-28 mx-auto bg-gradient-to-r from-[#00eaff] via-[#8a3dff] to-[#ff4fd8] rounded-full"></div>
+            <div className="h-1 w-20 sm:w-28 mx-auto bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink rounded-full"></div>
           </div>
           <p className="text-base sm:text-lg md:text-xl text-white mb-3 sm:mb-4 font-bold leading-tight">
             {t("home.tagline")}
           </p>
-          <p className="text-xs sm:text-sm md:text-base text-[#a9b0ff] max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed font-medium">
+          <p className="text-xs sm:text-sm md:text-base text-text-muted max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed font-medium">
             {t("home.description")}
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center">
           <Button
             asChild
-            className="rounded-lg sm:rounded-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-bold bg-gradient-to-r from-[#00eaff] via-[#8a3dff] to-[#ff4fd8] hover:from-[#ff4fd8] hover:via-[#8a3dff] hover:to-[#00eaff] shadow-[0_0_25px_rgba(138,61,255,0.4)] hover:shadow-[0_0_40px_rgba(138,61,255,0.6)] transition-all duration-300"
+            className="rounded-lg sm:rounded-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-bold bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink hover:from-neon-pink hover:via-neon-purple hover:to-neon-blue shadow-[0_0_25px_rgba(138,61,255,0.4)] hover:shadow-[0_0_40px_rgba(138,61,255,0.6)] transition-all duration-300"
           >
             <Link to="/products" className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 sm:w-5" />
@@ -45,7 +45,7 @@ export function HomePage() {
           <Button
             asChild
             variant="outline"
-            className="rounded-lg sm:rounded-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-bold border-2 border-[#00eaff] hover:bg-[rgba(0,234,255,0.15)] hover:border-[#00eaff] hover:shadow-[0_0_25px_rgba(0,234,255,0.3)] transition-all duration-300 text-white bg-transparent"
+            className="rounded-lg sm:rounded-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-sm sm:text-base md:text-lg font-bold border-2 border-neon-blue hover:bg-[rgba(0,240,255,0.15)] hover:border-neon-blue hover:shadow-[0_0_25px_rgba(0,240,255,0.3)] transition-all duration-300 text-white bg-transparent"
           >
             <a
               href="https://wa.me/8801409185492"

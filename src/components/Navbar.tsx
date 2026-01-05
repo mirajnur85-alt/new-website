@@ -19,7 +19,7 @@ export function Navbar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(5,7,19,0.98)] backdrop-blur-xl border-b border-[rgba(0,234,255,0.15)] shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+    <nav className="navbar fixed top-0 left-0 right-0 z-50 shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20 md:h-24">
           {/* Enhanced Logo Section - Responsive */}
@@ -28,7 +28,7 @@ export function Navbar() {
             className="flex items-center gap-2 sm:gap-3 font-bold text-white no-underline group flex-shrink-0"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00eaff] to-[#8a3dff] rounded-full blur-md opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-neon-blue to-neon-purple rounded-full blur-md opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
               <img
                 src="/assets/logo.jpg"
                 alt="MIRAJ XHEAT OFFICIAL"
@@ -36,13 +36,13 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-black bg-gradient-to-r from-white via-[#00eaff] to-[#ff4fd8] bg-clip-text text-transparent leading-tight whitespace-nowrap">
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-black bg-gradient-to-r from-white via-neon-blue to-neon-pink bg-clip-text text-transparent leading-tight whitespace-nowrap">
                 MIRAJ XHEAT
               </span>
               <span className="text-xs sm:text-sm md:text-base font-black bg-gradient-to-r from-[#00eaff] to-[#ff4fd8] bg-clip-text text-transparent leading-tight">
                 OFFICIAL
               </span>
-              <span className="text-[9px] sm:text-[10px] md:text-[11px] text-[#a9b0ff] font-medium uppercase tracking-wider hidden md:block mt-0.5">
+              <span className="text-[9px] sm:text-[10px] md:text-[11px] text-text-muted font-medium uppercase tracking-wider hidden md:block mt-0.5">
                 Premium Gaming Solutions
               </span>
             </div>

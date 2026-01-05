@@ -7,10 +7,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export function Footer() {
   const { t } = useLanguage();
   return (
-    <footer className="bg-gradient-to-r from-[#050713] via-[#0a0e24] to-[#050713] py-12 sm:py-16 border-t border-[rgba(255,255,255,0.1)] mt-12 sm:mt-16 md:mt-20">
+    <footer className="footer py-12 sm:py-16 mt-12 sm:mt-16 md:mt-20">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h5 className="font-black text-2xl sm:text-3xl mb-8 sm:mb-10 bg-gradient-to-r from-[#00eaff] to-[#ff4fd8] bg-clip-text text-transparent">
+          <h5 className="font-black text-2xl sm:text-3xl mb-8 sm:mb-10 bg-gradient-to-r from-neon-blue to-neon-pink bg-clip-text text-transparent">
             {t("footer.connect")}
           </h5>
 
@@ -63,7 +63,7 @@ export function Footer() {
           {/* Trust Badges */}
           <TrustBadges />
 
-          <div className="border-t-2 border-[rgba(255,255,255,0.15)] pt-6 sm:pt-8 mt-6 sm:mt-8">
+          <div className="border-t-2 border-cyber-border pt-6 sm:pt-8 mt-6 sm:mt-8">
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4">
               <Link to="/privacy" className="text-xs sm:text-sm text-[#a9b0ff] hover:text-[#00eaff] font-semibold transition-colors">
                 {t("footer.privacy")}

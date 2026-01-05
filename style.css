@@ -2,63 +2,74 @@
    ROOT VARIABLES
 ===================== */
 :root {
-    --bg: #05060a;
-    --card-bg: linear-gradient(160deg, #0d1020, #0a0d18);
-    --border: rgba(255, 255, 255, .08);
+    --bg-void: #030407;
+    --glass-surface: rgba(20, 23, 35, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.08);
 
-    --blue: #00eaff;
-    --purple: #8a3dff;
-    --pink: #ff4fd8;
+    --neon-blue: #00f0ff;
+    --neon-purple: #bd00ff;
+    --neon-pink: #ff0099;
 
     --text-main: #ffffff;
-    --text-soft: #a9b0ff;
+    --text-muted: #94a3b8;
 }
 
 /* =====================
-   BASE
+   BASE & LAYOUT
 ===================== */
 body {
-    background: radial-gradient(circle at top, #0c1025, #02030a);
-    color: var(--text-main);
-    font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
-    padding-top: 90px;
-    margin: 0;
+    background-color: var(--bg-void);
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(189, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 100% 0%, rgba(0, 240, 255, 0.1) 0%, transparent 40%);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 /* =====================
    NAVBAR
 ===================== */
 .navbar {
-    background: linear-gradient(90deg, #050713, #0a0e24);
-    border-bottom: 1px solid var(--border);
-    backdrop-filter: blur(10px);
+    background: rgba(3, 4, 7, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 /* =====================
-   MAIN CONTENT
-===================== */
-.main-content {
-    padding: 40px 0 90px;
-}
-
-/* =====================
-   CARD
+   CARDS
 ===================== */
 .xheat-card {
-    background: var(--card-bg);
-    border-radius: 20px;
-    padding: 20px;
-    border: 1px solid var(--border);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .9);
-    transition: all .35s ease;
+    background: var(--glass-surface);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.xheat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
+    pointer-events: none;
 }
 
 .xheat-card:hover {
     transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.15);
     box-shadow:
-        0 0 40px rgba(138, 61, 255, .5),
-        0 0 60px rgba(0, 234, 255, .25);
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 20px rgba(0, 240, 255, 0.1);
 }
 
 /* =====================
@@ -66,35 +77,41 @@ body {
 ===================== */
 .head {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     align-items: center;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
-    width: 55px;
-    height: 55px;
-    border-radius: 14px;
-    border: 2px solid rgba(255, 255, 255, .25);
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* 🔥 FIXED CARD TITLE */
+.xheat-card:hover .logo {
+    transform: scale(1.05);
+}
+
 .title {
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: .4px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    background: linear-gradient(135deg, var(--blue), var(--pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-main);
     line-height: 1.2;
 }
 
-/* Subtitle */
 .sub {
-    font-size: 12px;
-    color: var(--text-soft);
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-top: 4px;
 }
 
 /* =====================
@@ -102,168 +119,167 @@ body {
 ===================== */
 .price-grid {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 8px 10px;
+    grid-template-columns: 85px 1fr;
+    gap: 10px 12px;
+    position: relative;
+    z-index: 1;
 }
 
 .day {
     font-size: 13px;
-    color: #cfd6ff;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
 }
 
 .price-btn {
-    background: rgba(255, 255, 255, .04);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 8px 12px;
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 10px 14px;
+    color: var(--text-main);
     text-decoration: none;
     font-size: 13px;
-    transition: all .3s ease;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
 }
 
 .price-btn:hover {
-    background: rgba(0, 234, 255, .15);
-    border-color: var(--blue);
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* =====================
    BUY BUTTON
 ===================== */
 .buy-btn {
-    display: block;
-    margin-top: 16px;
-    text-align: center;
-    padding: 11px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--purple), var(--pink));
-    color: #000;
-    font-weight: 900;
-    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 240, 255, 0.25);
+}
+
+.buy-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .buy-btn:hover {
-    color: #fff;
-    transform: scale(1.05);
+    transform: translateY(-2px);
     box-shadow:
-        0 0 25px rgba(138, 61, 255, .8),
-        0 0 40px rgba(255, 79, 216, .6);
+        0 8px 30px rgba(189, 0, 255, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.buy-btn:hover::before {
+    opacity: 1;
 }
 
 /* =====================
-   FOOTER
+   FOOTER & SOCIAL
 ===================== */
 .footer {
-    background: linear-gradient(90deg, #050713, #0a0e24);
-    padding: 40px 0;
-    border-top: 1px solid var(--border);
+    background: #020203;
+    padding: 60px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-
-/* =====================
-   SOCIAL ICONS – ORIGINAL BRAND STYLE
-===================== */
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 18px;
-    margin: 20px 0;
+    gap: 16px;
+    margin: 24px 0;
 }
 
 .social {
-    text-decoration: none;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    font-size: 22px;
-    color: #fff;
-    background: rgba(255, 255, 255, .05);
-    border: 1px solid rgba(255, 255, 255, .12);
-    transition: all .35s ease;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    border-radius: 16px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* TELEGRAM */
-.social.tg {
-    color: #2AABEE;
+.social:hover {
+    transform: translateY(-4px) scale(1.05);
+    color: #ffffff;
 }
 
+/* Brand Colors on Hover */
 .social.tg:hover {
     background: #2AABEE;
-    color: #fff;
-    box-shadow: 0 0 25px rgba(42, 171, 238, .9);
-    transform: translateY(-4px);
-}
-
-/* WHATSAPP */
-.social.wa {
-    color: #25D366;
+    border-color: #2AABEE;
+    box-shadow: 0 8px 25px rgba(42, 171, 238, 0.3);
 }
 
 .social.wa:hover {
     background: #25D366;
-    color: #fff;
-    box-shadow: 0 0 25px rgba(37, 211, 102, .9);
-    transform: translateY(-4px);
-}
-
-/* DISCORD */
-.social.dc {
-    color: #5865F2;
+    border-color: #25D366;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
 }
 
 .social.dc:hover {
     background: #5865F2;
-    color: #fff;
-    box-shadow: 0 0 25px rgba(88, 101, 242, .9);
-    transform: translateY(-4px);
-}
-
-/* YOUTUBE */
-.social.yt {
-    color: #FF0000;
+    border-color: #5865F2;
+    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.3);
 }
 
 .social.yt:hover {
     background: #FF0000;
-    color: #fff;
-    box-shadow: 0 0 30px rgba(255, 0, 0, .9);
-    transform: translateY(-4px);
+    border-color: #FF0000;
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.3);
 }
-
 
 /* =====================
    NAVBAR CONTACT BUTTON
 ===================== */
 .nav-contact-btn {
-    padding: 8px 18px !important;
-    border-radius: 999px;
-    font-weight: 800;
-    letter-spacing: .4px;
-    color: #000 !important;
-    background: linear-gradient(135deg, #25D366, #00eaff);
-    box-shadow:
-        0 0 15px rgba(37, 211, 102, .6),
-        0 0 30px rgba(0, 234, 255, .4);
-    transition: all .35s ease;
+    padding: 10px 20px !important;
+    border-radius: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
 }
 
 .nav-contact-btn:hover {
-    color: #fff !important;
-    transform: translateY(-2px) scale(1.05);
-    box-shadow:
-        0 0 25px rgba(37, 211, 102, .9),
-        0 0 45px rgba(0, 234, 255, .8);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-contact-btn::after {
