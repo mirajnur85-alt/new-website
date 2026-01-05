@@ -1,6 +1,6 @@
 # MIRAJ XHEAT OFFICIAL
 
-> Premium Gaming Solutions | Trusted Reseller | 24/7 Support
+> Premium Gaming Solutions | Trusted Seller | 24/7 Support
 
 A modern, professional e-commerce platform built with cutting-edge web technologies for selling premium gaming cheats and modifications. Designed with user experience and performance in mind.
 
