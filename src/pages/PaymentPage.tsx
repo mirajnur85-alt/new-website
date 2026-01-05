@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const WHATSAPP_NUMBER = "8801409185492";
-const SHOW_INDIA_PAYMENT = true;
-const UPI_ID = "airtel1397@ybl";
+const SHOW_INDIA_PAYMENT =  false;
+const UPI_ID = "gund";
 
 interface PaymentMethod {
   id: string;
