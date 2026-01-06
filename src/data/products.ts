@@ -245,7 +245,6 @@ export const products: Product[] = [
       createPrice("1 Day", 4),
       createPrice("7 Days", 15),
       createPrice("31 Days", 25),
-      createPrice("31 Days", 35, "WITH G-BOX"),
     ],
   },
   {
