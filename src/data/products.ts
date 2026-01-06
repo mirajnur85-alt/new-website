@@ -284,4 +284,40 @@ export const products: Product[] = [
       createPrice("20 Days", 6),
     ],
   },
+  {
+    id: "g-box-ios",
+    name: "G-BOX iOS",
+    subtitle: "IPA SIGNER & INSTALLER",
+    image: "/assets/logo.jpg",
+    description: "📌 NOTE: Professional iOS IPA Signer and Installer. Use any IPA files on your iPhone without computer.",
+    features: [
+      "📦 Install IPA Files Directly",
+      "🔧 No Computer Required",
+      "⚡ Fast Signing Process",
+      "🛡️ Anti-Revoke Support",
+      "🍏 Compatible with Latest iOS",
+      "🎨 Easy to Use Interface"
+    ],
+    prices: [
+      createPrice("1 Year", 10),
+    ],
+  },
+  {
+    id: "esign-certificate",
+    name: "E-SING CERTIFICATE",
+    subtitle: "STABLE iOS CERTIFICATE",
+    image: "/assets/logo.jpg",
+    description: "📌 NOTE: Premium Enterprise Certificate for E-Sign and other signing tools with long-term stability.",
+    features: [
+      "📜 1 Year Stability Guarantee",
+      "🔑 Individual Certificate Use",
+      "🚀 Optimized for E-Sign / G-Box",
+      "🛡️ Support All iOS Apps",
+      "✅ Instant Activation",
+      "🔒 Private & Secure"
+    ],
+    prices: [
+      createPrice("1 Year", 10),
+    ],
+  },
 ];
