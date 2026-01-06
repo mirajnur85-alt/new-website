@@ -287,7 +287,7 @@ export const products: Product[] = [
     id: "g-box-ios",
     name: "G-BOX iOS",
     subtitle: "IPA SIGNER & INSTALLER",
-    image: "/assets/logo.jpg",
+    image: "/assets/gbox.png",
     description: "📌 NOTE: Professional iOS IPA Signer and Installer. Use any IPA files on your iPhone without computer.",
     features: [
       "📦 Install IPA Files Directly",
@@ -323,7 +323,7 @@ export const products: Product[] = [
     id: "zolo-cheats-pubg",
     name: "ZOLO CHEATS PUBG",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/logo.jpg",
+    image: "/assets/zolocheats.png",
     description: "📌 NOTE: Premium PUBG mobile cheat with advanced features and high security.",
     features: [
       "🔥 Advance Aimbot",
