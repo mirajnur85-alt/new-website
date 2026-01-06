@@ -288,7 +288,7 @@ export const products: Product[] = [
     id: "G BOX,E SING",
     name: "G BOX,E SING",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/mr-robot.jpg",
+    image: "/assets/gbox.png",
     description: "G BOX E-SING IPA Installer lets you install IPA files (mod/premium apps) on iPhone without the App Store using a 1-year valid certificate.",
     features: [
      G BOX E-SING IPA Installer lets you install IPA files (mod/premium apps) on iPhone without the App Store using a 1-year valid certificate.
