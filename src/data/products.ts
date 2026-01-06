@@ -287,7 +287,7 @@ export const products: Product[] = [
     id: "g-box-ios",
     name: "G-BOX iOS",
     subtitle: "IPA SIGNER & INSTALLER",
-    image: "/assets/logo.jpg",
+    image: "/assets/gbox.png",
     description: "📌 NOTE: Professional iOS IPA Signer and Installer. Use any IPA files on your iPhone without computer.",
     features: [
       "📦 Install IPA Files Directly",
