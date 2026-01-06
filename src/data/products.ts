@@ -287,7 +287,7 @@ export const products: Product[] = [
     id: "g-box-ios",
     name: "G-BOX iOS",
     subtitle: "IPA SIGNER & INSTALLER",
-    image: "/assets/gbox.png",
+    image: "/assets/logo.jpg",
     description: "📌 NOTE: Professional iOS IPA Signer and Installer. Use any IPA files on your iPhone without computer.",
     features: [
       "📦 Install IPA Files Directly",
@@ -305,7 +305,7 @@ export const products: Product[] = [
     id: "esign-certificate",
     name: "E-SING CERTIFICATE",
     subtitle: "STABLE iOS CERTIFICATE",
-    image: "/assets/esign.webp",
+    image: "/assets/logo.jpg",
     description: "📌 NOTE: Premium Enterprise Certificate for E-Sign and other signing tools with long-term stability.",
     features: [
       "📜 1 Year Stability Guarantee",
@@ -317,6 +317,26 @@ export const products: Product[] = [
     ],
     prices: [
       createPrice("1 Year", 10),
+    ],
+  },
+  {
+    id: "zolo-cheats-pubg",
+    name: "ZOLO CHEATS PUBG",
+    subtitle: "MIRAJ XHEAT OFFICIAL",
+    image: "/assets/logo.jpg",
+    description: "📌 NOTE: Premium PUBG mobile cheat with advanced features and high security.",
+    features: [
+      "🔥 Advance Aimbot",
+      "🔥 ESP Wallhack",
+      "🔥 No Recoil",
+      "🔥 Speed Hack",
+      "🔥 iPad View",
+      "🔥 100% Safe & Anti-Ban"
+    ],
+    prices: [
+      createPrice("1 Day", 2),
+      createPrice("7 Days", 3),
+      createPrice("30 Days", 10),
     ],
   },
 ];
