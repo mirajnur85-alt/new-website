@@ -305,7 +305,7 @@ export const products: Product[] = [
     id: "esign-certificate",
     name: "E-SING CERTIFICATE",
     subtitle: "STABLE iOS CERTIFICATE",
-    image: "/assets/logo.jpg",
+    image: "/assets/esign.webp",
     description: "📌 NOTE: Premium Enterprise Certificate for E-Sign and other signing tools with long-term stability.",
     features: [
       "📜 1 Year Stability Guarantee",
