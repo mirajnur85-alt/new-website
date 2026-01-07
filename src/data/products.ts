@@ -16,7 +16,7 @@ export const products: Product[] = [
     id: "drip-clint-mobile",
     name: "DRIP CLINT MOD MENU APK",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/Drip clint.jpg",
+    image: "/assets/drip.jpg",
     description: "📌 NOTE: It Will Run Directly On Your Phone And Will Be In Easy Use",
     features: [
       "🎚️ Aim Kill",
@@ -40,7 +40,7 @@ export const products: Product[] = [
     id: "drip-clint-pc",
     name: "DRIP CLINT MOD MENU PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/Drip clint.jpg",
+    image: "/assets/drip.jpg",
     description: "📌 NOTE: Professional gaming solution with advanced features and easy setup.",
     features: [
       "🎚️ Aim Kill",
@@ -64,7 +64,7 @@ export const products: Product[] = [
     id: "drip-clint-root",
     name: "DRIP CLINT MOD MENU ROOT",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/Drip clint.jpg",
+    image: "/assets/drip.jpg",
     description: "📌 NOTE: Root access version for maximum control and advanced features.",
     features: [
       "🎚️ Aim Kill",
