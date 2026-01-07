@@ -17,6 +17,7 @@ export const products: Product[] = [
     name: "DRIP CLINT MOD MENU APK",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/drip.jpg",
+    categories: ["mobile"],
     description: "📌 NOTE: It Will Run Directly On Your Phone And Will Be In Easy Use",
     features: [
       "🎚️ Aim Kill",
@@ -41,6 +42,7 @@ export const products: Product[] = [
     name: "DRIP CLINT MOD MENU PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/drip.jpg",
+    categories: ["pc"],
     description: "📌 NOTE: Professional gaming solution with advanced features and easy setup.",
     features: [
       "🎚️ Aim Kill",
@@ -65,6 +67,7 @@ export const products: Product[] = [
     name: "DRIP CLINT MOD MENU ROOT",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/drip.jpg",
+    categories: ["root"],
     description: "📌 NOTE: Root access version for maximum control and advanced features.",
     features: [
       "🎚️ Aim Kill",
@@ -88,6 +91,7 @@ export const products: Product[] = [
     name: "BR MODE INJECTOR",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
+    categories: ["root"],
     description: "✅ 𝐍𝐎𝐓𝐄 : (VphoneOS Non Root) | ʀᴏᴏᴛ ᴅᴇᴠɪᴄᴇ | ᴇᴍᴜʟᴀᴛᴏʀ | ✓ 100% ʀᴀɴᴋ ᴡᴏʀᴋɪɴɢ",
     features: [
       "👍 Sɪʟᴇɴᴛ Aɪᴍʙᴏᴛ",
@@ -110,6 +114,7 @@ export const products: Product[] = [
     name: "BR MODS – BYPASS PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
+    categories: ["pc", "bypass"],
     description: "✅ 𝐍𝐎𝐓𝐄 : Emulator Bypass - Play in Mobile Lobby from PC | Advanced Anti-Detection | 100% Secure",
     features: [
       "🛡️ Eᴍᴜʟᴀᴛᴏʀ Bʏᴘᴀss (Mᴏʙɪʟᴇ Lᴏʙʙʏ)",
@@ -133,6 +138,7 @@ export const products: Product[] = [
     name: "BR MODS – SILENTAIM PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/br.png.jpg",
+    categories: ["pc", "silentaim"],
     description: "✅ 𝐍𝐎𝐓𝐄 : High-Precision Silent Aim System | Performance Optimized for PC",
     features: [
       "🎯 Sɪʟᴇɴᴛ Aɪᴍ Sʏsᴛᴇᴍ (Mᴀɪɴ)",
@@ -155,6 +161,7 @@ export const products: Product[] = [
     name: "HG CHEATS",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/hg.jpg",
+    categories: ["mobile", "root"],
     description: "Premium HG cheats with advanced features and regular updates.",
     features: [
       "Premium quality",
@@ -173,6 +180,7 @@ export const products: Product[] = [
     name: "PRIME MODS",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/prime.jpg.png",
+    categories: ["mobile"],
     description: "Prime quality mods with exclusive features and premium support.",
     features: [
       "Prime quality",
@@ -190,6 +198,7 @@ export const products: Product[] = [
     name: "SYSCALL CONTROLS",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/logo.jpg",
+    categories: ["root"],
     description: "Advanced syscall controls with system-level access and optimization.",
     features: [
       "System-level access",
@@ -208,6 +217,7 @@ export const products: Product[] = [
     name: "PATO TEAM",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/Pato team.jpg",
+    categories: ["mobile", "root"],
     description: "Professional team solution with enterprise-level features.",
     features: [
       "Team features",
@@ -226,6 +236,7 @@ export const products: Product[] = [
     name: "FLUORITE iOS PANEL",
     subtitle: "iPhone 6–17",
     image: "/assets/Flourite.jpg",
+    categories: ["ios"],
     description: "iOS optimized solution for iPhone users with full device support.",
     features: [
       "👍 𝐀𝐢𝗺𝐛𝗼𝘁 – Neck | Head | Body",
@@ -252,6 +263,7 @@ export const products: Product[] = [
     name: "LK TEAM – ROOT + EMU PC",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/Lk team.png",
+    categories: ["pc", "root"],
     description: "Root and emulator support for PC with advanced emulation features.",
     features: [
       "Root support",
@@ -271,6 +283,7 @@ export const products: Product[] = [
     name: "MR ROBOT",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/mr-robot.jpg",
+    categories: ["mobile"],
     description: "Advanced robotic system with AI-powered features and automation.",
     features: [
       "AI-powered",
@@ -288,6 +301,7 @@ export const products: Product[] = [
     name: "G-BOX iOS",
     subtitle: "IPA SIGNER & INSTALLER",
     image: "/assets/gbox.png",
+    categories: ["ios"],
     description: "📌 NOTE: Professional iOS IPA Signer and Installer. Use any IPA files on your iPhone without computer.",
     features: [
       "📦 Install IPA Files Directly",
@@ -306,6 +320,7 @@ export const products: Product[] = [
     name: "E-SING CERTIFICATE",
     subtitle: "STABLE iOS CERTIFICATE",
     image: "/assets/esing.png",
+    categories: ["ios"],
     description: "📌 NOTE: Premium Enterprise Certificate for E-Sign and other signing tools with long-term stability.",
     features: [
       "📜 1 Year Stability Guarantee",
@@ -324,6 +339,7 @@ export const products: Product[] = [
     name: "ZOLO CHEATS PUBG",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/zolocheats.png",
+    categories: ["mobile"],
     description: "📌 NOTE: Premium PUBG mobile cheat with advanced features and high security.",
     features: [
       "🔥 Advance Aimbot",
@@ -344,6 +360,7 @@ export const products: Product[] = [
     name: "8BALL POOL EZ TEAM",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/ezteam.jpg",
+    categories: ["mobile"],
     description: "📌 NOTE: Premium 8 Ball Pool tool with advanced features and long-term stability.",
     features: [
       "🎱 Extended Guideline",

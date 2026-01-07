@@ -26,13 +26,12 @@ export function ProductsPage() {
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         product.subtitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         (product.features && product.features.some(f => f.toLowerCase().includes(searchQuery.toLowerCase())));
-    
+      product.subtitle.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (product.features && product.features.some(f => f.toLowerCase().includes(searchQuery.toLowerCase())));
+
     const matchesCategory = selectedCategory === "all" ||
-      product.name.toLowerCase().includes(selectedCategory) ||
-      product.id.includes(selectedCategory);
-    
+      (product.categories && product.categories.includes(selectedCategory));
+
     return matchesSearch && matchesCategory;
   });
 
@@ -81,7 +80,7 @@ export function ProductsPage() {
               />
             </div>
           </div>
-          
+
           {/* Category Filters */}
           <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center">
             {categories.map((category) => {
@@ -90,11 +89,10 @@ export function ProductsPage() {
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 sm:px-5 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center gap-2 border-2 ${
-                    selectedCategory === category.id
+                  className={`px-4 sm:px-5 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg sm:rounded-xl font-bold text-xs sm:text-sm transition-all duration-300 flex items-center gap-2 border-2 ${selectedCategory === category.id
                       ? "bg-gradient-to-r from-[#00eaff] to-[#ff4fd8] text-white shadow-[0_0_20px_rgba(138,61,255,0.5)] scale-105 border-transparent"
                       : "bg-[rgba(255,255,255,0.05)] border-[rgba(255,255,255,0.15)] text-[#a9b0ff] hover:border-[#00eaff] hover:bg-[rgba(0,234,255,0.08)] hover:text-white hover:scale-105"
-                  }`}
+                    }`}
                 >
                   <Icon className={`w-3 h-3 sm:w-4 sm:h-4 ${selectedCategory === category.id ? 'text-white' : 'text-[#00eaff]'}`} />
                   <span>{category.label}</span>

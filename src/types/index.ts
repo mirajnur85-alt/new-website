@@ -17,6 +17,7 @@ export interface Product {
   videoUrl?: string; // Optional YouTube video URL
   stockStatus?: "in_stock" | "low_stock" | "out_of_stock"; // Stock status
   stockCount?: number; // Optional stock count
+  categories?: string[]; // Optional categories for filtering
 }
 
 export interface Coupon {
