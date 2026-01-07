@@ -339,4 +339,23 @@ export const products: Product[] = [
       createPrice("30 Days", 10),
     ],
   },
+  {
+    id: "8ball-pool-ez-team",
+    name: "8BALL POOL EZ TEAM",
+    subtitle: "MIRAJ XHEAT OFFICIAL",
+    image: "/assets/ezteam.jpg",
+    description: "📌 NOTE: Premium 8 Ball Pool tool with advanced features and long-term stability.",
+    features: [
+      "🎱 Extended Guideline",
+      "🎱 Auto Play Support",
+      "🎱 Precise Power Control",
+      "🎱 Anti-Ban Protection",
+      "🎱 All Cues Unlocked",
+      "🎱 Smooth Performance"
+    ],
+    prices: [
+      createPrice("7 Days", 3),
+      createPrice("30 Days", 6),
+    ],
+  },
 ];
