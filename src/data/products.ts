@@ -160,7 +160,7 @@ export const products: Product[] = [
     id: "hg-cheats",
     name: "HG CHEATS",
     subtitle: "MIRAJ XHEAT OFFICIAL",
-    image: "/assets/hg.jpg",
+    image: "/assets/hgnew.jpg",
     categories: ["mobile", "root"],
     description: "Premium HG cheats with advanced features and regular updates.",
     features: [
@@ -198,7 +198,7 @@ export const products: Product[] = [
     name: "SYSCALL CONTROLS",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/logo.jpg",
-    categories: ["root"],
+    categories: ["mobile"],
     description: "Advanced syscall controls with system-level access and optimization.",
     features: [
       "System-level access",
@@ -283,7 +283,7 @@ export const products: Product[] = [
     name: "MR ROBOT",
     subtitle: "MIRAJ XHEAT OFFICIAL",
     image: "/assets/mr-robot.jpg",
-    categories: ["mobile"],
+    categories: ["root"],
     description: "Advanced robotic system with AI-powered features and automation.",
     features: [
       "AI-powered",
